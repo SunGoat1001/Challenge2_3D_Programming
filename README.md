@@ -10,14 +10,9 @@ A modern, interactive Three.js-powered 3D furniture designer that lets you creat
 - [Setup & Installation](#setup--installation)
 - [Running the App](#running-the-app)
 - [Controls & Interaction Guide](#controls--interaction-guide)
-- [Project Structure](#project-structure)
 - [Libraries & Dependencies](#libraries--dependencies)
-- [Architecture Overview](#architecture-overview)
-- [API Reference](#api-reference)
-- [Browser Compatibility](#browser-compatibility)
-- [Troubleshooting](#troubleshooting)
 
----
+--- 
 
 ## Features
 
