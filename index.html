@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Living Room Designer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div id="scene-container"></div>
+        <div id="hud">
+            <details id="hud-panel" open>
+                <summary><span style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Design Menu</span></summary>
+                <div class="hud-group">
+                    <label style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Layouts</label>
+                    <div class="layout-buttons" id="layout-buttons"></div>
+                </div>
+                <div class="hud-group">
+                    <label for="furniture-type" style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Furniture</label>
+                    <div class="type-buttons" id="type-buttons"></div>
+                </div>
+                <div class="hud-group">
+                    <label for="color-picker" style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Color</label>
+                    <input type="color" id="color-picker" value="#d4a373" />
+                </div>
+                <div class="hud-group actions">
+                    <button id="add-btn">Add</button>
+                    <button id="remove-btn">Remove</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+                <div class="hud-group toggles" style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                    onselectstart="return false;" onmousedown="return false;">
+                    <label><input type="checkbox" id="snap-toggle" /> Snap to grid</label>
+                    <label><input type="checkbox" id="grid-toggle" /> Show grid</label>
+                    <label><input type="checkbox" id="mute-toggle" /> Mute</label>
+                </div>
+                <div class="hud-group secondary" style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                    onselectstart="return false;" onmousedown="return false;">
+                    <label><input type="checkbox" id="persist-toggle" checked /> Save layout</label>
+                </div>
+                <hr style="margin: 6px 0; border: none; border-top: 1px solid #ddd;" />
+                <div id="texture-panel-container" class="texture-panel" style="display: none;">
+                    <label style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Textures</label>
+                    <div class="texture-panel-controls">
+                        <input type="file" id="texture-upload-input" accept="image/*" style="display: none;" />
+                        <button id="texture-upload-btn">Upload</button>
+                    </div>
+                    <div id="texture-thumbnails" class="texture-thumbnails"></div>
+                    <div id="texture-disabled-message"
+                        style="display: none; font-size: 11px; color: #999; text-align: center; padding: 8px 0;">
+                        Select an object to preview textures
+                    </div>
+                </div>
+                <hr style="margin: 6px 0; border: none; border-top: 1px solid #ddd;" />
+                <div id="transform-panel-container" class="transform-panel" style="display: none;">
+                    <label style="-webkit-user-select:none;user-select:none;" unselectable="on"
+                        onselectstart="return false;" onmousedown="return false;">Transform</label>
+
+                    <div class="transform-group">
+                        <label style="font-size: 11px; color: #666;">Scale</label>
+                        <div class="transform-controls">
+                            <button id="transform-scale-dec" title="Decrease scale">−</button>
+                            <input type="range" id="transform-scale-slider" min="0.5" max="2.5" step="0.05" value="1" />
+                            <span id="transform-scale-value">1.00</span>
+                            <button id="transform-scale-inc" title="Increase scale">+</button>
+                        </div>
+                    </div>
+
+                    <div class="transform-group">
+                        <label style="font-size: 11px; color: #666;">Rotation (Y-Axis)</label>
+                        <div class="transform-controls">
+                            <button id="transform-rotation-dec" title="Rotate left">←</button>
+                            <input type="range" id="transform-rotation-slider" min="0" max="360" step="15" value="0" />
+                            <span id="transform-rotation-value">0°</span>
+                            <button id="transform-rotation-inc" title="Rotate right">→</button>
+                        </div>
+                    </div>
+
+                    <button id="transform-reset-btn" style="width: 100%; font-size: 12px;">Reset</button>
+                    <div id="transform-disabled-message"
+                        style="display: none; font-size: 11px; color: #999; text-align: center; padding: 8px 0;">
+                        Select an object to transform
+                    </div>
+                </div>
+            </details>
+            <div id="status"></div>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
