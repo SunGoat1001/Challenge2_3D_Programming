@@ -3,7 +3,7 @@
 A modern, interactive Three.js-powered 3D furniture designer that lets you create, customize, and arrange furniture in virtual living rooms with intuitive controls and real-time visual feedback.
 ## Video Demo
 
-[![3D Living Room Design App Demo](https://img.youtube.com/vi/zNB0qjm52Bc/0.jpg)](https://youtu.be/zNB0qjm52Bc "3D Living Room Design App Demo")
+[![3D Living Room Design App Demo](https://img.youtube.com/vi/ZloGs7SnqCg/0.jpg)](https://youtu.be/ZloGs7SnqCg "3D Living Room Design App Demo")
 ---
 
 ## Table of Contents
