@@ -35,7 +35,7 @@ canvas {
     backdrop-filter: blur(8px);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.16);
     padding: 12px 14px;
     min-width: 260px;
     display: grid;
@@ -96,7 +96,6 @@ button:active,
 button:hover {
     border-color: #888;
     background: #fff;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 input[type="color"] {
@@ -180,12 +179,10 @@ input[type="color"] {
 
 .texture-thumbnail:hover {
     border-color: #999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .texture-thumbnail.active {
     border-color: #3a7afe;
-    box-shadow: 0 0 0 2px rgba(58, 122, 254, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .texture-checkmark {
